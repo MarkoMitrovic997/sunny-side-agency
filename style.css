@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 4800px;
+   
+}
+
+
+/*------------------------- HEADER ---------------------------------------*/
+
+#header{
+    height: 1000px;
+    width: 100%;
+    background-image: url("images/desktop/image-header.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center center;
+}
+
+.arrow-down{
+    display: block;
+    margin: 150px auto;
+    
+}
+
+.logo{
+    width: 150px;
+    height: 35px;
+}
+
+.flex-nav ul{
+    margin-right: 50px;
+}
+
+.flex-nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 300;
+    padding: 10px 20px;
+
+    cursor: pointer;
+}
+
+.flex-nav ul li:hover{
+    background-color: white;
+    border-radius: 20px;
+    color: rgb(35, 204, 255);
+    
+}
+
+.flex-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;
+}
+
+#header h1{
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Fraunces', serif;
+    color: white;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 11px;
+}
+
+
+/*----------------------- MAIN --------------------------------*/
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.left-text{
+    flex-basis: 26%;
+    margin: auto; /*centrira div*/ 
+}
+
+.left-text h2{
+    font-size: 60px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.left-text p{
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    /*margin-bottom: 20px;*/
+    line-height: 1.7;
+}
+
+.left-text a{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    display: inline-block;
+
+    /*border-top: none;
+    border-bottom: 5px;
+    border-bottom-color: red;
+    border-bottom-style: solid;*/
+
+}
+
+.left-text a hr{
+    border: none;
+    border: 5px solid rgb(255, 255, 121);
+    border-radius: 5px;
+    margin-top: -8px;
+    
+}
+
+
+.egg-pic{
+    width: 200px;
+    flex-basis: 50%;
+}
+
+/*---------- DRUGA SLIKA I TEKST ------------*/
+
+
+.right-text{
+    flex-basis: 26%;
+    margin: auto; /*centrira div*/ 
+}
+
+.right-text h2{
+    font-size: 45px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.right-text p{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 1.7;
+}
+
+.right-text a{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    display: inline-block;
+
+}
+
+.right-text a hr{
+    border: none;
+    border: 5px solid rgb(255, 121, 143);
+    border-radius: 5px;
+    margin-top: -8px;
+    
+}
+
+/*---------------------- TRECI RED -----------------------------*/
+
+.two-pic-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--------------KOD ZA VISNJU----------------*/
+.strrowberry-pic{
+    width: 100%;
+}
+
+.column{
+    position: relative;
+    width: 50%;
+}
+
+.text-on-pic{
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 33%;
+ 
+    width: 38%;
+}
+
+.text-on-pic h2{
+    font-size: 37px;
+    font-family: 'Fraunces', serif;;
+}
+
+.text-on-pic p{
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.7;
+    margin-top: 30px;
+}
+
+.orange-pic{
+    width: 100%;
+}
+
+
+/*-------------- ISTI KOD VAZI I ZA NARANDZU, ISTE KLASE ITD-----------------*/
+
+
+/*---------------- CLIENT TESTIMONIALS ----------------------*/
+
+.title-testiminials{
+    color: rgb(165, 164, 164);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 23px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.grid-class{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    margin: 50px 200px;
+}
+
+.profile{
+   text-align: center;
+}
+
+.profile img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.profile p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 40px;
+}
+
+.profile h3{
+    margin-top: 40px;
+}
+
+.profile h4{
+    color: rgb(185, 185, 185);
+    margin-top: 10px;
+}
+
+/*--------------------------- PRODUCTS ---------------------------------*/
+
+.products-to-show{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    margin-top: 150px;
+}
+
+.products-to-show img{
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/*------------------------- FOOTER --------------------------*/
+
+#footer{
+    padding: 80px;
+    background-color: rgb(160, 216, 167);
+}
+
+.view-footer{
+    text-align: center;
+    margin-top: -40px;
+}
+
+.view-footer img{
+    width: 180px;
+    
+}
+
+.nav-links{
+    margin-top: 25px;
+    
+}
+
+.nav-links a{
+    padding: 10px 25px;
+    color: rgb(76, 114, 75);
+}
+
+.icon-links{
+    margin-top: 45px;
+    font-size: 20px;
+    
+}
+
+.icon-links i{
+    padding: 10px;
+}
